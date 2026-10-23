@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+{% extends 'myapp/base.html' %}
+{% load static %}
+
+{% block title_block %}
+    Projects
+{% endblock %}
+
+{% block content_block %}
+
+<div class="projects-section">
+    <h1>My Projects</h1>
+
+    <div class="container">
+        <div class="project-card">
+
+            <h2>Dice Rolling Simulation</h2>
+
+            <p>
+                A Python project that simulates rolling a six-sided
+                dice and generates a random result between 1 and 6.
+            </p>
+
+            <a href="{% static 'image/Dice rolling simulation .png' %}"
+            
+               rel="noopener noreferrer"
+               class="project-btn">
+                View Project Screenshot
+            </a>
+
+        </div>
+    </div>
+
+    
+    <div class="container">
+        <div class="project-card">
+
+            <h2>Number Guessing Game </h2>
+
+            <p>
+                A Python project that guesses the number from 1 to 100
+            </p>
+
+            <a href="{% static 'image/Number guessing Game.png' %}"
+            
+               rel="noopener noreferrer"
+               class="project-btn">
+                View Project Screenshot
+            </a>
+
+        </div>
+    </div>
+</div>
+
+{% endblock %}
+

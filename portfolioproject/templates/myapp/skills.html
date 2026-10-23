@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+{% extends 'myapp/base.html' %}
+
+{% block title_block %}
+My Skills
+{% endblock %}
+
+{% block content_block %}
+
+<section class="my-skills-section" id="skills">
+
+    <div class="my-skills-wrapper">
+
+        <!-- Skills Heading -->
+        <div class="my-skills-heading">
+            <span class="my-skills-label">WHAT I DO</span>
+
+            <h1>My <span>Skills</span></h1>
+
+            <div class="my-skills-underline"></div>
+
+            <p class="my-skills-intro">
+                Technologies and tools I use to turn ideas into
+                functional and attractive web applications.
+            </p>
+        </div>
+
+        <!-- Skills Cards -->
+        <div class="skills-grid">
+
+            <article class="skill-card">
+                <div class="skill-icon">🐍</div>
+                <h3>Python</h3>
+                <p>Writing clean code and developing useful applications.</p>
+            </article>
+
+            <article class="skill-card">
+                <div class="skill-icon">🌐</div>
+                <h3>HTML &amp; CSS</h3>
+                <p>Creating structured, responsive, and attractive web pages.</p>
+            </article>
+
+            <article class="skill-card">
+                <div class="skill-icon">⚡</div>
+                <h3>JavaScript</h3>
+                <p>Adding interactive features and dynamic behavior to websites.</p>
+            </article>
+
+            <article class="skill-card">
+                <div class="skill-icon">🎯</div>
+                <h3>Django</h3>
+                <p>Building dynamic web applications using Python and Django.</p>
+            </article>
+
+            <article class="skill-card">
+                <div class="skill-icon">🗄️</div>
+                <h3>Database Management</h3>
+                <p>Organizing, storing, and retrieving application data.</p>
+            </article>
+
+            <article class="skill-card">
+                <div class="skill-icon">💡</div>
+                <h3>Problem Solving</h3>
+                <p>Analyzing challenges and developing practical solutions.</p>
+            </article>
+
+        </div>
+
+        <!-- Skills Description -->
+        <div class="my-skills-description">
+
+            <h2>My Development Journey</h2>
+
+            <p>
+                I have a good command of <strong>Python and Django</strong>,
+                which I use to develop dynamic and functional web applications.
+                I also have a solid understanding of
+                <strong>HTML, CSS, and JavaScript</strong>, allowing me to
+                create responsive, interactive, and visually appealing
+                web interfaces.
+            </p>
+
+            <p>
+                I am familiar with <strong>database management</strong>,
+                which helps me handle and organize data efficiently.
+                I enjoy solving problems, learning new technologies,
+                and improving my programming skills through practical projects.
+            </p>
+
+            <p>
+                As a passionate Computer Science student, I am continuously
+                exploring new tools and technologies to strengthen my
+                development skills and build efficient, modern, and
+                innovative web applications.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+{% endblock %}

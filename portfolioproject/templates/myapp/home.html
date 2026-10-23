@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+{% extends 'myapp/base.html' %}
+{% load static %}
+{% block title_block %} 
+home
+{% endblock %}
+{% block content_block %}
+
+
+<section class="hero-section">
+
+    <div class="welcome-badge">
+        <span class="status-dot"></span>
+        Welcome to my Portfolio
+    </div>
+
+    <h1>
+        Hi, I'm <span class="highlight-name">Saksham Bhatt</span>
+    </h1>
+
+    <h2>
+        <span class="highlight-role">Python & Django</span> Developer
+    </h2>
+
+    <p>
+        I am an IT student passionate about web development
+        and programming. I enjoy building practical projects
+        using Python and Django.
+    </p>
+
+    
+<div class="hero-buttons">
+    <a href="{% url 'projects' %}" class="btn btn-primary">
+        View My Projects <span>→</span>
+    </a>
+
+    <a href="{% url 'contacts' %}" class="btn btn-outline">
+        <span>✉</span> Contact Me
+    </a>
+</div>
+
+  <div class="home-image">
+        <img src="{% static 'images/home page img .jpg' %}"
+             alt="My Portfolio Image">
+    </div>
+
+</section>
+{% endblock %}
