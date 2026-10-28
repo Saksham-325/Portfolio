@@ -1696,3 +1696,81 @@ body {
     color: white;
 }
 
+
+
+
+
+/* Prevent unwanted horizontal scrolling */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    width: 100%;
+    overflow-x: clip;
+}
+
+body {
+    width: 100%;
+    margin: 0;
+    overflow-x: clip;
+}
+
+/* Make images fit their containers */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Tablet screens */
+@media screen and (max-width: 1024px) {
+    .container {
+        max-width: 100%;
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+
+    .projects-container,
+    .skills-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+/* Mobile screens */
+@media screen and (max-width: 768px) {
+    .container {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .home-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .home-image {
+        flex: 0 1 auto;
+        margin: 24px auto 0;
+        max-width: 100%;
+    }
+
+    .projects-container,
+    .skills-container {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    h1 {
+        font-size: clamp(28px, 8vw, 42px);
+    }
+
+    p {
+        overflow-wrap: anywhere;
+    }
+
+    button,
+    input,
+    textarea {
+        max-width: 100%;
+    }
+}
