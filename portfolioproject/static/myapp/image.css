@@ -1779,3 +1779,35 @@ img {
 @media (min-width: 768px) {
   .nav-search input { width: 250px; }
 }
+
+@media (max-width: 767.98px) {
+  dialog.drawer {
+    background: #0b1220;
+    color: #ffffff;
+  }
+
+  dialog.drawer .drawer-title {
+    color: #ffffff;
+  }
+
+  dialog.drawer .btn-close {
+    filter: invert(1) brightness(200%);
+  }
+
+  dialog.drawer .nav-link {
+    color: #e5e7eb;
+    font-size: 1.1rem;
+  }
+
+  dialog.drawer .nav-link:hover {
+    color: #3b82f6;
+  }
+
+  dialog.drawer .menu {
+    background: #111a2e;
+  }
+
+  dialog.drawer .menu-item {
+    color: #e5e7eb;
+  }
+}
