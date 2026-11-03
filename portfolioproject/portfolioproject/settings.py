@@ -24,7 +24,7 @@ STATIC_DIR = BASE_DIR/('static')
 SECRET_KEY = 'django-insecure-m7h#s1ca6t#q-e%_scih-qi0@d0m(091tz%r-1pa(lmjzs@_yd'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 
 
@@ -41,6 +41,7 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -116,6 +117,7 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 STATICFILES_DIRS = [STATIC_DIR,]
+STATIC_ROOT = BASE_DIR/'staticfiles'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
@@ -132,3 +134,13 @@ CSRF_TRUSTED_ORIGINS = [
     "https://saksham55.onrender.com",
     "https://saksham55.pythonanywhere.com",
 ]
+
+STORAGES = {
+    "default":{
+        "BACKEND":
+"django.core.files.storage.FileSystemStorage",
+    },
+    "staticfiles": {
+        "BACKEND": "whitenoise.storage.CompressedManifestStaticFilesStorage",
+    },
+}
